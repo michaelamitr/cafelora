@@ -1,7 +1,7 @@
 import './drink.css';
+import { Layer } from '../Layer/layer';
 export const Drink = (props) => {
   const { name, ordered, image, layers } = props;
-  const { color, label } = layers[0];
   const drinkElm = document.createElement('div');
   drinkElm.classList.add('drink');
   drinkElm.innerHTML = `
@@ -11,10 +11,6 @@ export const Drink = (props) => {
     </div>
     <div class="drink__info">
       <h3>${name}</h3>
-      <div class="layer">
-        <div class="layer__color" style="background-color: ${color}"></div>
-        <div class="layer__label">${label}</div>
-      </div>
     </div>
   </div>
   <div class="drink__controls">
@@ -22,5 +18,11 @@ export const Drink = (props) => {
       Objednat
     </button>
   </div>`;
+  drinkElm.querySelector('.drink__info').append(
+    Layer({
+      color: '#feeeca',
+      label: 'mléčná pěna',
+    }),
+  );
   return drinkElm;
 };
