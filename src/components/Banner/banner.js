@@ -1,6 +1,7 @@
 import './banner.css';
 export const Banner = () => {
   const bannerElm = document.createElement('section');
+  bannerElm.id = 'home';
   bannerElm.classList.add('banner');
   bannerElm.innerHTML = `
         <div class="container">

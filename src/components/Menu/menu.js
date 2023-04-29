@@ -2,6 +2,7 @@ import './menu.css';
 export const Menu = () => {
   const menuElm = document.createElement('section');
   menuElm.classList.add('menu');
+  menuElm.id = 'menu';
   menuElm.innerHTML = `
   <div class="container">
     <h2>Naše nabídka</h2>

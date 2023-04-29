@@ -1,6 +1,7 @@
 import './contact.css';
 export const Contact = () => {
   const contactElm = document.createElement('section');
+  contactElm.id = 'contact';
   contactElm.innerHTML = `
   <div class="container">
     <h2>Kde nás najdete</h2>

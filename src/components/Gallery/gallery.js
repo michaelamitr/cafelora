@@ -1,6 +1,7 @@
 import './gallery.css';
 export const Gallery = () => {
   const galleryElm = document.createElement('section');
+  galleryElm.id = 'gallery';
   galleryElm.classList.add('gallery');
   galleryElm.innerHTML = `
         <div class="container">
