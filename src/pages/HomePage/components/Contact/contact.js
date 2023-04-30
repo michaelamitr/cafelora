@@ -13,11 +13,11 @@ export const Contact = () => {
       </div>
       <table class="contact__hours">
         <tr><td>Pondělí</td><td>ZAVŘENO</td></tr>
-        <tr><td>Úterý</td><td>11:00 - 22:00</td></tr>
-        <tr><td>Středa</td><td>11:00 - 22:00</td></tr>
-        <tr><td>Čtvrtek</td><td>11:00 - 22:00</td></tr>
-        <tr><td>Sobota</td><td>9:00 - 02:00</td></tr>
-        <tr><td>Neděle</td><td>9:00 - 02:00</td></tr>
+        <tr><td>Úterý</td><td>11:00 – 22:00</td></tr>
+        <tr><td>Středa</td><td>11:00 – 22:00</td></tr>
+        <tr><td>Čtvrtek</td><td>11:00 – 22:00</td></tr>
+        <tr><td>Sobota</td><td>9:00 – 02:00</td></tr>
+        <tr><td>Neděle</td><td>9:00 – 02:00</td></tr>
       </table>
       <img
         class="contact__map"
