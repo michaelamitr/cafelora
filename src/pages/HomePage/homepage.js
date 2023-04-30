@@ -10,6 +10,6 @@ export const HomePage = () => {
   homepageElm.classList.add('page');
   const main = document.createElement('main');
   main.append(Banner(), Menu({ drinks: 'loading' }), Gallery(), Contact());
-  homepageElm.append(Header(), main, Footer());
+  homepageElm.append(Header({ showMenu: true }), main, Footer());
   return homepageElm;
 };
