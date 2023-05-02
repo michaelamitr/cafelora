@@ -22,15 +22,20 @@ export const Order = (props) => {
         return response.json();
       })
       .then((data) => {
-        const dataArray = data.result.filter((drink) => drink.ordered === true);
-        console.log(dataArray);
-        if (dataArray.length === 0) {
+        const orderedDrinksArray = data.result.filter(
+          (drink) => drink.ordered === true,
+        );
+        console.log(orderedDrinksArray);
+        if (orderedDrinksArray.length === 0) {
           console.log('Prázdná objednávka');
           orderElm
             .querySelector('.empty-order')
             .classList.remove('empty-order--hide');
         } else {
-          orderElm.replaceWith(Order({ items: dataArray }));
+          orderElm.replaceWith(Order({ items: orderedDrinksArray }));
+          orderElm
+            .querySelector('.empty-order')
+            .classList.add('empty-order--hide');
         }
       });
   } else {
