@@ -34,7 +34,7 @@ export const Header = (props) => {
     <div class="site-logo"></div>
 
     <nav class="inline-nav">
-      <a href="/">Hlavní stránka</a>
+      <a href=".">Hlavní stránka</a>
     </nav>
   </div>`;
   }
